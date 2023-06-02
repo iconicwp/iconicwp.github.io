@@ -1,26 +1,43 @@
 {{ define "main" }}
-	<main>
-		<article>
-			<h1>{{ .Title }}</h1>
-			<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
-			<div>
-				{{ .Content }}
+<main>
+	<a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
+	<div id="inner-wrap" class="wrap hfeed kt-clear">
+		<section class="entry-hero page-hero-section entry-hero-layout-standard">
+			<div class="entry-hero-container-inner">
+				<div class="hero-section-overlay"></div>
+				<div class="hero-container site-container">
+					<header
+						class="entry-header page-title title-align-inherit title-tablet-align-inherit title-mobile-align-inherit">
+						<h1 class="entry-title">{{ .Title }}</h1>
+					</header>
+				</div>
 			</div>
-			{{ with .Params.tags }}
-			<div>
-				<ul id="tags">
-					{{ range . }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
+		</section>
+		<div id="primary" class="content-area">
+			<div class="content-container site-container">
+				<main id="main" class="site-main" role="main">
+					<div class="content-wrap">
+						<article
+							class="entry content-bg single-entry post-5186 page type-page status-publish hentry">
+							<div class="entry-content-wrap">
+								<div class="entry-content single-content">
+									<div class="content-wrap">
+										{{ $url := print "snippets" .Slug }}
+										{{ range readDir $url }}
+											{{ $fileUrl := print $url .Name }}
+											{{< highlight php >}}
+											{{ readFile $fileUrl }}
+											{{< / highlight >}}
+										{{ end }}
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</main>
 			</div>
-			{{ end }}
-			{{ with .Site.DisqusShortname }}
-			<div>
-				{{ template "_internal/disqus.html" . }}
-			</div>
-			{{ end }}
-		</article>
-	</main>
-{{ partial "sidebar.html" . }}
+		</div>
+		<span id="kadence-conversion-end-of-content"></span>
+	</div>
+</main>
 {{ end }}

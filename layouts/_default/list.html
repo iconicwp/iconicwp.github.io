@@ -1,16 +1,39 @@
 {{ define "main" }}
-	<main>
-		{{ if or .Title .Content }}
-		<div>
-			{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
-			{{ with .Content }}<div>{{ . }}</div>{{ end }}
+<main>
+	<a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
+	<div id="inner-wrap" class="wrap hfeed kt-clear">
+		<section class="entry-hero page-hero-section entry-hero-layout-standard">
+			<div class="entry-hero-container-inner">
+				<div class="hero-section-overlay"></div>
+				<div class="hero-container site-container">
+					<header
+						class="entry-header page-title title-align-inherit title-tablet-align-inherit title-mobile-align-inherit">
+						<h1 class="entry-title">Documentation</h1>
+					</header>
+				</div>
+			</div>
+		</section>
+		<div id="primary" class="content-area">
+			<div class="content-container site-container">
+				<main id="main" class="site-main" role="main">
+					<div class="content-wrap">
+						<article
+							class="entry content-bg single-entry post-5186 page type-page status-publish hentry">
+							<div class="entry-content-wrap">
+								<div class="entry-content single-content">
+									<div class="content-wrap grid-cols grid-sm-col-2 grid-lg-col-3">
+										{{ range .Paginator.Pages }}
+										{{ .Render "summary" }}
+										{{ end }}
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</main>
+			</div>
 		</div>
-		{{ end }}
-
-		{{ range .Paginator.Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
-	</main>
-{{ partial "sidebar.html" . }}
+		<span id="kadence-conversion-end-of-content"></span>
+	</div>
+</main>
 {{ end }}
