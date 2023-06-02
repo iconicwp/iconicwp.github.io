@@ -1,0 +1,4 @@
+baseURL = 'http://iconicwp.github.io'
+languageCode = 'en-gb'
+title = 'IconicWP Snippets Library'
+contentDir = 'snippets'

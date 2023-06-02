@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-gb" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ .Title }}</title>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	{{ with .OutputFormats.Get "RSS" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
+</head>
+<body class="page-template-default page page-id-5186 wp-custom-logo wp-embed-responsive footer-on-bottom hide-focus-outline link-style-standard content-title-style-above content-width-normal content-style-unboxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
+
+	<div id="wrapper" class="site wp-site-blocks">
+		<a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
+		<header id="masthead" class="site-header" role="banner" itemtype="https://schema.org/WPHeader" itemscope>
+			<div id="main-header" class="site-header-wrap">
+				<div class="site-header-inner-wrap">
+					<div class="site-header-upper-wrap">
+						<div class="site-header-upper-inner-wrap">
+							<div class="site-main-header-wrap site-header-row-container site-header-focus-item site-header-row-layout-standard"
+								data-section="kadence_customizer_header_main">
+								<div class="site-header-row-container-inner">
+									<div class="site-container">
+										<div
+											class="site-main-header-inner-wrap site-header-row site-header-row-has-sides site-header-row-no-center">
+											<div
+												class="site-header-main-section-left site-header-section site-header-section-left">
+												<div class="site-header-item site-header-focus-item"
+													data-section="title_tagline">
+													<div
+														class="site-branding branding-layout-standard site-brand-logo-only">
+														<a class="brand has-logo-image" href="https://iconicwp.com/"
+															rel="home" aria-label="Iconic"><img width="1" height="1"
+																src="https://iconicwp.com/wp-content/uploads/2020/10/iconic-logo-pair-white.svg"
+																class="custom-logo svg-logo-image" alt="Iconic"
+																decoding="async" /></a></div>
+												</div>
+	
+											</div>
+											<div
+												class="site-header-main-section-right site-header-section site-header-section-right">
+												<div class="site-header-item site-header-focus-item"
+													data-section="kadence_customizer_header_html">
+													<div class="header-html inner-link-style-normal">
+														<div class="header-html-inner">
+															<style>
+																.wp-block-kadence-advancedbtn.kt-btns_8b8fba-fc,
+																.site .entry-content .wp-block-kadence-advancedbtn.kt-btns_8b8fba-fc,
+																.wp-block-kadence-advancedbtn.kb-btns_8b8fba-fc,
+																.site .entry-content .wp-block-kadence-advancedbtn.kb-btns_8b8fba-fc {
+																	margin-bottom: 0px;
+																}
+	
+																.wp-block-kadence-advancedbtn.kb-btns_8b8fba-fc {
+																	gap: var(--global-kb-gap-xs, 0.5rem);
+																	justify-content: center;
+																	align-items: center;
+																}
+	
+																.kt-btns_8b8fba-fc .kt-button {
+																	font-weight: normal;
+																	font-style: normal;
+																}
+	
+																.kt-btns_8b8fba-fc .kt-btn-wrap-0 {
+																	margin-right: 5px;
+																}
+	
+																.wp-block-kadence-advancedbtn.kt-btns_8b8fba-fc .kt-btn-wrap-0 .kt-button {
+																	font-size: 16px;
+																	margin-top: 0px;
+																	margin-right: 0px;
+																	margin-bottom: 0px;
+																	margin-left: 0px;
+																}
+	
+																.wp-block-kadence-advancedbtn.kt-btns_8b8fba-fc .kt-btn-wrap-0 .kt-button::before {
+																	display: none;
+																}
+	
+																.wp-block-kadence-advancedbtn.kt-btns_8b8fba-fc .kt-btn-wrap-0 .kt-button .kt-btn-svg-icon {
+																	font-size: 22px;
+																}
+															</style>
+															<div
+																class="wp-block-kadence-advancedbtn kt-btn-align-center kt-btn-tablet-align-inherit kt-btn-mobile-align-inherit kt-btns-wrap kt-btns_8b8fba-fc">
+																<div class="kt-btn-wrap kt-btn-wrap-0"><a
+																		class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true iconic-button iconic-button--all-access kb-btn-global-inherit wp-block-button__link"
+																		href="https://iconicwp.com/bundles/all-access-club/"><span
+																			class="kt-btn-inner-text">Join the All Access
+																			Club</span>
+																		<div style="display:inline-flex;justify-content:center;align-items:center"
+																			class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																			<svg style="display:inline-block;vertical-align:middle"
+																				viewbox="0 -192 1024 1408" height="1em"
+																				width="1em" fill="currentColor"
+																				preserveaspectratio="xMinYMin meet">
+																				<path
+																					d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																				</path>
+																			</svg></div>
+																	</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mobile-header" class="site-mobile-header-wrap">
+				<div class="site-header-inner-wrap">
+					<div class="site-header-upper-wrap">
+						<div class="site-header-upper-inner-wrap">
+							<div
+								class="site-main-header-wrap site-header-focus-item site-header-row-layout-standard site-header-row-tablet-layout-default site-header-row-mobile-layout-default ">
+								<div class="site-header-row-container-inner">
+									<div class="site-container">
+										<div
+											class="site-main-header-inner-wrap site-header-row site-header-row-has-sides site-header-row-no-center">
+											<div
+												class="site-header-main-section-left site-header-section site-header-section-left">
+												<div class="site-header-item site-header-focus-item"
+													data-section="title_tagline">
+													<div
+														class="site-branding mobile-site-branding branding-layout-standard branding-tablet-layout-inherit site-brand-logo-only branding-mobile-layout-inherit">
+														<a class="brand has-logo-image" href="https://iconicwp.com/"
+															rel="home" aria-label="Iconic"><img width="1" height="1"
+																src="https://iconicwp.com/wp-content/uploads/2020/10/iconic-logo-pair-white.svg"
+																class="custom-logo svg-logo-image" alt="Iconic"
+																decoding="async" /></a></div>
+												</div>
+											</div>
+											<div
+												class="site-header-main-section-right site-header-section site-header-section-right">
+												<div class="site-header-item site-header-focus-item site-header-item-navgation-popup-toggle"
+													data-section="kadence_customizer_mobile_trigger">
+													<div class="mobile-toggle-open-container">
+														<button id="mobile-toggle"
+															class="menu-toggle-open drawer-toggle menu-toggle-style-bordered"
+															aria-label="Open menu" data-toggle-target="#mobile-drawer"
+															data-toggle-body-class="showing-popup-drawer-from-right"
+															aria-expanded="false" data-set-focus=".menu-toggle-close">
+															<span class="menu-toggle-icon"><span
+																	class="kadence-svg-iconset"><svg aria-hidden="true"
+																		class="kadence-svg-icon kadence-menu-svg"
+																		fill="currentColor" version="1.1"
+																		xmlns="http://www.w3.org/2000/svg" width="24"
+																		height="24" viewBox="0 0 24 24">
+																		<title>Toggle Menu</title>
+																		<path
+																			d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z">
+																		</path>
+																	</svg></span></span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="inner-wrap" class="wrap hfeed kt-clear">
+			<section class="entry-hero page-hero-section entry-hero-layout-standard">
+				<div class="entry-hero-container-inner">
+					<div class="hero-section-overlay"></div>
+					<div class="hero-container site-container">
+						<header
+							class="entry-header page-title title-align-inherit title-tablet-align-inherit title-mobile-align-inherit">
+							<h1 class="entry-title">Documentation</h1>
+						</header>
+					</div>
+				</div>
+			</section>
+			<div id="primary" class="content-area">
+				<div class="content-container site-container">
+					<main id="main" class="site-main" role="main">
+						<div class="content-wrap">
+							<article id="post-5186"
+								class="entry content-bg single-entry post-5186 page type-page status-publish hentry">
+								<div class="entry-content-wrap">
+									<div class="entry-content single-content">
+										<div class="content-wrap grid-cols grid-sm-col-2 grid-lg-col-3">
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/general/">
+													<div class="iconic-card__header iconic-card__header--default-image">
+														<img width="600" height="338"
+															src="https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon-600x338.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce Blog Post by Iconic" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon-600x338.png 600w, https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon-300x169.png 300w, https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon-1024x576.png 1024w, https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon-768x432.png 768w, https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon-356x200.png 356w, https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon-540x304.png 540w, https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon-790x444.png 790w, https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon-100x56.png 100w, https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon-580x326.png 580w, https://iconicwp.com/wp-content/uploads/2020/05/fallback-icon.png 1200w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															General</h2>
+														<p class="bpress-product-description bpress-kb-description">General
+															documentation about Iconic plugins, including managing your
+															account, subscriptions, and licenses.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/flux-checkout-for-woocommerce/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2020/08/flux-checkout-woocommerce-clean-600x360.png"
+															class="iconic-card__header-image"
+															alt="Flux Checkout for WooCommerce" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2020/08/flux-checkout-woocommerce-clean-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2020/08/flux-checkout-woocommerce-clean-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2020/08/flux-checkout-woocommerce-clean-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2020/08/flux-checkout-woocommerce-clean-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2020/08/flux-checkout-woocommerce-clean.png 1200w, https://iconicwp.com/wp-content/uploads/2020/08/flux-checkout-woocommerce-clean-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2020/08/flux-checkout-woocommerce-clean-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															Flux Checkout for WooCommerce</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot Flux Checkout for
+															WooCommerce.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woothumbs-for-woocommerce/">
+													<div class="iconic-card__header ">
+														<picture class="iconic-card__header-image" decoding="async"
+															loading="lazy">
+															<source type="image/webp"
+																srcset="https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-600x360.png.webp 600w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-300x180.png.webp 300w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-1024x614.png.webp 1024w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-768x461.png.webp 768w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-333x200.png.webp 333w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-540x324.png.webp 540w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean.png.webp 1200w"
+																sizes="(max-width: 600px) 100vw, 600px" />
+															<img width="600" height="360"
+																src="https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-600x360.png"
+																alt="WooThumbs for WooCommerce" decoding="async"
+																loading="lazy"
+																srcset="https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean-540x324.png 540w, https://iconicwp.com/wp-content/uploads/2016/05/woothumbs-clean.png 1200w"
+																sizes="(max-width: 600px) 100vw, 600px" />
+														</picture>
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooThumbs for WooCommerce</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooThumbs for
+															WooCommerce.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woocommerce-delivery-slots/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-delivery-slots-clean-600x360.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce Delivery Slots" decoding="async" loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-delivery-slots-clean-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-delivery-slots-clean-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-delivery-slots-clean-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-delivery-slots-clean-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-delivery-slots-clean.png 1200w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-delivery-slots-clean-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-delivery-slots-clean-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooCommerce Delivery Slots</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooCommerce Delivery
+															Slots.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woocommerce-show-single-variations/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-show-single-variations-clean-600x360.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce Show Single Variations" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-show-single-variations-clean-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-show-single-variations-clean-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-show-single-variations-clean-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-show-single-variations-clean-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-show-single-variations-clean.png 1200w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-show-single-variations-clean-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-show-single-variations-clean-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooCommerce Show Single Variations</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooCommerce Show
+															Single Variations.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woocommerce-attribute-swatches/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2016/05/wooommerce-attribute-swatches-clean-600x360.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce Attribute Swatches" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2016/05/wooommerce-attribute-swatches-clean-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2016/05/wooommerce-attribute-swatches-clean-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2016/05/wooommerce-attribute-swatches-clean-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2016/05/wooommerce-attribute-swatches-clean-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2016/05/wooommerce-attribute-swatches-clean.png 1200w, https://iconicwp.com/wp-content/uploads/2016/05/wooommerce-attribute-swatches-clean-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2016/05/wooommerce-attribute-swatches-clean-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooCommerce Attribute Swatches</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooCommerce Attribute
+															Swatches.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/iconic-sales-booster-for-woocommerce/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2019/06/woocommerce-sales-booster-by-iconic-archive-600x360.png"
+															class="iconic-card__header-image"
+															alt="Iconic Sales Booster for WooCommerce" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2019/06/woocommerce-sales-booster-by-iconic-archive-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2019/06/woocommerce-sales-booster-by-iconic-archive-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2019/06/woocommerce-sales-booster-by-iconic-archive-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2019/06/woocommerce-sales-booster-by-iconic-archive-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2019/06/woocommerce-sales-booster-by-iconic-archive.png 1200w, https://iconicwp.com/wp-content/uploads/2019/06/woocommerce-sales-booster-by-iconic-archive-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2019/06/woocommerce-sales-booster-by-iconic-archive-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															Iconic Sales Booster for WooCommerce</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot Iconic Sales Booster
+															for WooCommerce.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woocommerce-quickview/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2016/02/iconic-woocommerce-quickview-archive-600x360.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce Quickview by Iconic" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2016/02/iconic-woocommerce-quickview-archive-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2016/02/iconic-woocommerce-quickview-archive-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2016/02/iconic-woocommerce-quickview-archive-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2016/02/iconic-woocommerce-quickview-archive-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2016/02/iconic-woocommerce-quickview-archive.png 1200w, https://iconicwp.com/wp-content/uploads/2016/02/iconic-woocommerce-quickview-archive-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2016/02/iconic-woocommerce-quickview-archive-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooCommerce Quickview</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooCommerce Quickview.
+														</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woocommerce-linked-variations/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2018/01/iconic-woocommerce-linked-variations-archive-600x360.png"
+															class="iconic-card__header-image"
+															alt="Iconic WooCommerce Linked Variations" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2018/01/iconic-woocommerce-linked-variations-archive-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2018/01/iconic-woocommerce-linked-variations-archive-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2018/01/iconic-woocommerce-linked-variations-archive-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2018/01/iconic-woocommerce-linked-variations-archive-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2018/01/iconic-woocommerce-linked-variations-archive.png 1200w, https://iconicwp.com/wp-content/uploads/2018/01/iconic-woocommerce-linked-variations-archive-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2018/01/iconic-woocommerce-linked-variations-archive-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooCommerce Linked Variations</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooCommerce Linked
+															Variations.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woocommerce-product-configurator/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-product-configurator-archive-600x360.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce Product Configurator by Iconic"
+															decoding="async" loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-product-configurator-archive-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-product-configurator-archive-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-product-configurator-archive-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-product-configurator-archive-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-product-configurator-archive.png 1200w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-product-configurator-archive-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2016/02/woocommerce-product-configurator-archive-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooCommerce Product Configurator</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooCommerce Product
+															Configurator.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/wishlists-for-woocommerce/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2018/11/woocommerce-wishlists-iconic-archive-600x360.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce Wishlists by Iconic" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2018/11/woocommerce-wishlists-iconic-archive-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2018/11/woocommerce-wishlists-iconic-archive-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2018/11/woocommerce-wishlists-iconic-archive-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2018/11/woocommerce-wishlists-iconic-archive-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2018/11/woocommerce-wishlists-iconic-archive.png 1200w, https://iconicwp.com/wp-content/uploads/2018/11/woocommerce-wishlists-iconic-archive-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2018/11/woocommerce-wishlists-iconic-archive-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															Wishlists for WooCommerce</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot Wishlists for
+															WooCommerce.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woocommerce-account-pages/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2017/08/woocommerce-account-pages-archive-600x360.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce Account Pages by Iconic" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2017/08/woocommerce-account-pages-archive-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2017/08/woocommerce-account-pages-archive-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2017/08/woocommerce-account-pages-archive-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2017/08/woocommerce-account-pages-archive-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2017/08/woocommerce-account-pages-archive.png 1200w, https://iconicwp.com/wp-content/uploads/2017/08/woocommerce-account-pages-archive-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2017/08/woocommerce-account-pages-archive-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooCommerce Account Pages</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooCommerce Account
+															Pages.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woocommerce-custom-fields-for-variations/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2016/06/woocommerce-custom-fields-for-variations-archive-600x360.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce Custom Fields for Variations by Iconic"
+															decoding="async" loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2016/06/woocommerce-custom-fields-for-variations-archive-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2016/06/woocommerce-custom-fields-for-variations-archive-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2016/06/woocommerce-custom-fields-for-variations-archive-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2016/06/woocommerce-custom-fields-for-variations-archive-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2016/06/woocommerce-custom-fields-for-variations-archive.png 1200w, https://iconicwp.com/wp-content/uploads/2016/06/woocommerce-custom-fields-for-variations-archive-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2016/06/woocommerce-custom-fields-for-variations-archive-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooCommerce Custom Fields for Variations</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooCommerce Custom
+															Fields for Variations.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woocommerce-bundled-products/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2016/12/woocommerce-bundled-products-archive-600x360.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce Bundled Products by Iconic" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2016/12/woocommerce-bundled-products-archive-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2016/12/woocommerce-bundled-products-archive-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2016/12/woocommerce-bundled-products-archive-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2016/12/woocommerce-bundled-products-archive-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2016/12/woocommerce-bundled-products-archive.png 1200w, https://iconicwp.com/wp-content/uploads/2016/12/woocommerce-bundled-products-archive-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2016/12/woocommerce-bundled-products-archive-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooCommerce Bundled Products</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooCommerce Bundled
+															Products.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/woocommerce-quicktray/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2017/11/woocommerce-quicktray-archive-600x360.png"
+															class="iconic-card__header-image"
+															alt="WooCommerce QuickTray by Iconic" decoding="async"
+															loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2017/11/woocommerce-quicktray-archive-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2017/11/woocommerce-quicktray-archive-300x180.png 300w, https://iconicwp.com/wp-content/uploads/2017/11/woocommerce-quicktray-archive-1024x614.png 1024w, https://iconicwp.com/wp-content/uploads/2017/11/woocommerce-quicktray-archive-768x461.png 768w, https://iconicwp.com/wp-content/uploads/2017/11/woocommerce-quicktray-archive.png 1200w, https://iconicwp.com/wp-content/uploads/2017/11/woocommerce-quicktray-archive-333x200.png 333w, https://iconicwp.com/wp-content/uploads/2017/11/woocommerce-quicktray-archive-540x324.png 540w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															WooCommerce QuickTray</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot WooCommerce QuickTray.
+														</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+											<article>
+												<a class="iconic-card bpress-product-link bpress-kb-link"
+													href="https://iconicwp.com/docs/image-swap-for-woocommerce/">
+													<div class="iconic-card__header ">
+														<img width="600" height="360"
+															src="https://iconicwp.com/wp-content/uploads/2021/05/woocommerce-image-swap-600x360.png"
+															class="iconic-card__header-image"
+															alt="Image Swap for WooCommerce" decoding="async" loading="lazy"
+															srcset="https://iconicwp.com/wp-content/uploads/2021/05/woocommerce-image-swap-600x360.png 600w, https://iconicwp.com/wp-content/uploads/2021/05/woocommerce-image-swap-1200x720.png 1200w"
+															sizes="(max-width: 600px) 100vw, 600px" />
+													</div>
+													<div class="iconic-card__content bpress-product-content">
+														<h2 class="iconic-card__title bpress-product-title bpress-kb-title">
+															Image Swap for WooCommerce</h2>
+														<p class="bpress-product-description bpress-kb-description">Learn
+															how to setup, customize, and troubleshoot Image Swap for
+															WooCommerce.</p>
+													</div>
+													<div class="iconic-card__footer">
+														<div class="kt-btn-wrap kt-btn-wrap-0">
+															<button
+																class="kt-button button kt-btn-0-action kt-btn-size-standard kt-btn-style-basic kt-btn-svg-show-always kt-btn-has-text-true kt-btn-has-svg-true kb-btn-global-inherit wp-block-button__link">
+																<span class="kt-btn-inner-text">View Docs</span>
+																<div style="display:inline-flex;justify-content:center;align-items:center;font-size:22px;"
+																	class="kt-btn-svg-icon kt-btn-svg-icon-icon-arrow-right kt-btn-side-right">
+																	<svg style="display:inline-block;vertical-align:middle"
+																		viewBox="0 -192 1024 1408" height="1em" width="1em"
+																		fill="currentColor"
+																		xmlns="http://www.w3.org/2000/svg"
+																		preserveAspectRatio="xMinYMin meet">
+																		<path
+																			d="M926.43 49.573c-23.428-23.428-61.411-23.428-84.855 0s-23.428 61.41 0 84.856l317.57 317.569h-1055.141c-33.144 0-60.002 26.858-60.002 60.002s26.858 60.002 60.002 60.002h1055.141l-317.57 317.57c-23.428 23.428-23.428 61.411 0 84.855s61.411 23.428 84.855 0l419.996-419.995c23.428-23.428 23.428-61.41 0-84.856l-419.996-419.996z">
+																		</path>
+																	</svg>
+																</div>
+															</button>
+														</div>
+													</div>
+												</a>
+											</article>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</main>
+				</div>
+			</div>
+			<span id="kadence-conversion-end-of-content"></span>
+		</div>
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="site-footer-wrap">
+				<div class="site-bottom-footer-wrap site-footer-row-container site-footer-focus-item site-footer-row-layout-contained site-footer-row-tablet-layout-default site-footer-row-mobile-layout-default"
+					data-section="kadence_customizer_footer_bottom">
+					<div class="site-footer-row-container-inner">
+						<div class="site-container">
+							<div
+								class="site-bottom-footer-inner-wrap site-footer-row site-footer-row-columns-2 site-footer-row-column-layout-equal site-footer-row-tablet-column-layout-default site-footer-row-mobile-column-layout-row ft-ro-dir-row ft-ro-collapse-normal ft-ro-t-dir-default ft-ro-m-dir-default ft-ro-lstyle-noline">
+								<div class="site-footer-bottom-section-1 site-footer-section footer-section-inner-items-1">
+									<div class="footer-widget-area site-info site-footer-focus-item content-align-left content-tablet-align-center content-mobile-align-default content-valign-middle content-tablet-valign-default content-mobile-valign-default"
+										data-section="kadence_customizer_footer_html">
+										<div class="footer-widget-area-inner site-info-inner">
+											<div class="footer-html inner-link-style-normal">
+												<div class="footer-html-inner">
+													<p>&copy; IconicWP 2011 — 2023 / All Rights Reserved</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	{{ partial "header" . }}
+	{{ block "main" . }}{{ end }}
+	{{ partial "footer" . }}
+</body>
+</html>
